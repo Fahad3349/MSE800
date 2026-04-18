@@ -22,10 +22,9 @@ def collect_student_data():
 
 # Function to display sorted student data
 def display_students():
-    # Local variable for sorting
-    sorted_students = sorted(students_list, key=lambda x: x.name)
+    sorted_students = sorted(students_list, key=lambda x: x.age)
     
-    print("\nStudent List (Sorted by Name):")
+    print("\nStudent List (Sorted by Age):")
     for student in sorted_students:
         print(f"Name: {student.name}, Age: {student.age}")
 
