@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="MgN25dC0tzpjNsHgHYyT">
+    <mxGraphModel dx="860" dy="439" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Patient Logs into System" vertex="1">
+          <mxGeometry height="50" width="220" x="260" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="select" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Select Service" vertex="1">
+          <mxGeometry height="80" width="140" x="300" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="appointment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Book Appointment" vertex="1">
+          <mxGeometry height="50" width="180" x="80" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="payment" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Pay Booking Fee" vertex="1">
+          <mxGeometry height="50" width="180" x="80" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="confirm" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Appointment Confirmed" vertex="1">
+          <mxGeometry height="50" width="180" x="80" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="medication" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Order Medication" vertex="1">
+          <mxGeometry height="50" width="180" x="500" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="prescription" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Prescription Valid?" vertex="1">
+          <mxGeometry height="80" width="140" x="520" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="processMed" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Process Medication Order" vertex="1">
+          <mxGeometry height="50" width="180" x="500" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="reject" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" value="Reject Order" vertex="1">
+          <mxGeometry height="50" width="140" x="730" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="30" width="30" x="350" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" target="login">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="login" target="select">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="select" target="appointment" value="Appointment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="appointment" target="payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="payment" target="confirm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="select" target="medication" value="Medication">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="medication" target="prescription">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="prescription" target="processMed" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="prescription" target="reject" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="confirm" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="processMed" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="reject" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
